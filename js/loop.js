@@ -33,3 +33,30 @@ for(var a of array)
 {
     console.log(a, " ")
 }
+
+array.forEach((element,index) => {
+    console.log("ele is ",element,"and its is ",index)
+});
+
+//day3 task 
+objtype ={
+    "fname" : "debe",
+    "lastname":"jaga",
+    "age":20
+}
+/*console.log(objtype.age)                     //object is not iteratable
+objtype.forEach((value)=> {
+    console.log(value)
+});
+
+for(key in objtype){
+    value = objtype.key
+    console.log(key,value)
+}*/
+Object.keys(objtype).forEach((key) => {                // using for each loop task
+    console.log(key, objtype[key]);  
+  });
+
+for (let key of Object.keys(objtype)) {                    //using for of loop
+    console.log(key, objtype[key]);  
+  }
