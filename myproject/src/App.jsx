@@ -8,6 +8,7 @@ import Contact from './components/funcomp/Contact'
 import Gallery from './components/funcomp/Gallery'
 import Home from './components/funcomp/Home'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Footer from './components/funcomp/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/gallery" element = {<Gallery />} />
           <Route path="/contact" element = {<Contact />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
      
     </div>
