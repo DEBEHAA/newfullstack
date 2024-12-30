@@ -1,13 +1,27 @@
-// src/App.jsx
-import React from 'react'; // Import React
-import Classcompeg from './components/classcomp/classcompeg';  
+
+import React from 'react'; 
+
+import NavBar from './components/funcomp/NavBar';
 import './App.css'; 
+import About from './components/funcomp/About'
+import Contact from './components/funcomp/Contact'
+import Gallery from './components/funcomp/Gallery'
+import Home from './components/funcomp/Home'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      
-      <Classcompeg />
+    <div>
+      <BrowserRouter>
+      <NavBar />
+        <Routes>
+          <Route path="/" element = {<Home />} />
+          <Route path="/about" element= {<About college = "Kongu Engineering" clg1 = "Kongu Arts" clg2 = "Naturopathy"/>} />
+          <Route path="/gallery" element = {<Gallery />} />
+          <Route path="/contact" element = {<Contact />} />
+        </Routes>
+      </BrowserRouter>
+     
     </div>
   );
 }
