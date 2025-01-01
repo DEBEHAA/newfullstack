@@ -13,6 +13,7 @@ import UseEffect from './components/funcomp/UseEffect'
 import UseRef from './components/funcomp/UseRef'
 import UseContext from './components/funcomp/Usecontext';
 import UseMemo from './components/funcomp/UseMemo';
+import Images from './components/funcomp/images';
 function App() {
   return (
     <div>
@@ -27,7 +28,7 @@ function App() {
           <Route path="/use-ref" element = {<UseRef/>} />
           <Route path="/use-context" element = {<UseContext/>} />
           <Route path="/use-memo" element = {<UseMemo/>} />
-
+          <Route path="/images" element = {<Images/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>

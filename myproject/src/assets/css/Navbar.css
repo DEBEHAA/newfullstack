@@ -21,3 +21,7 @@ ul {
       background-color: white;
       color: chocolate;
     }
+  .button:hover{
+    background-color: #380bcb;
+    color: #1ed251;
+  }
