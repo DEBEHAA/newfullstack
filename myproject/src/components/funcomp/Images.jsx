@@ -17,9 +17,9 @@ var Images = () =>{
   return(
     <section>
     <h1>the images fetched are</h1>
-    {images.map((images)=>(
+    {images.slice(0,10).map((images)=>(
      
-     <img key ="image.id" src={images.url} alt={"image not found "}/>
+     <img key ="image.id" src={images.thumbnailUrl} alt={"image not found "}/>
    
     ))}
       

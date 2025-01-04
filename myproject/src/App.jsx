@@ -14,13 +14,16 @@ import UseRef from './components/funcomp/UseRef'
 import UseContext from './components/funcomp/Usecontext';
 import UseMemo from './components/funcomp/UseMemo';
 import Images from './components/funcomp/images';
+import Signup from './components/Authentication/Signup';
+import Signin from './components/Authentication/Signin';
 function App() {
   return (
     <div>
       <BrowserRouter>
       <NavBar />
         <Routes>
-          <Route path="/" element = {<Home />} />
+       
+          <Route path="/" element = {<Home/>} />
           <Route path="/about" element= {<About college = "Kongu Engineering" clg1 = "Kongu Arts" clg2 = "Naturopathy"/>} />
           <Route path="/gallery" element = {<Gallery />} />
           <Route path="/contact" element = {<Contact />} />
@@ -29,6 +32,9 @@ function App() {
           <Route path="/use-context" element = {<UseContext/>} />
           <Route path="/use-memo" element = {<UseMemo/>} />
           <Route path="/images" element = {<Images/>} />
+          <Route path='/signup' element={<Signup/>}/>
+          <Route path='/signin' element={<Signin/>}/>
+       
         </Routes>
         <Footer/>
       </BrowserRouter>
