@@ -14,8 +14,8 @@ import UseRef from './components/funcomp/UseRef'
 import UseContext from './components/funcomp/UseContext';
 import UseMemo from './components/funcomp/UseMemo';
 import Images from './components/funcomp/images';
-import Signup from './components/Authentication/Signup';
-import Signin from './components/Authentication/Signin';
+import SignupForm from './components/funcomp/Signup';
+import LoginForm from './components/funcomp/Login';
 function App() {
   return (
     <div>
@@ -32,8 +32,8 @@ function App() {
           <Route path="/use-context" element = {<UseContext/>} />
           <Route path="/use-memo" element = {<UseMemo/>} />
           <Route path="/images" element = {<Images/>} />
-          <Route path='/signup' element={<Signup/>}/>
-          <Route path='/signin' element={<Signin/>}/>
+          <Route path="/signup" element = {<SignupForm />}/>
+          <Route path="/login" element = {<LoginForm />}/>
        
         </Routes>
         <Footer/>
