@@ -5,8 +5,8 @@ var NavBar = () =>{
         <header>
             <nav>
                 <ul>
-                    <li><Link to="/" className='link'>Home</Link></li>
-                    <li><Link to="/about" className='link'>About</Link></li>
+                    <li><Link to='/' className='link'>Home</Link></li>
+                    <li><Link to="/about" className='link' >About</Link></li>
                     <li><Link to="/gallery" className='link'>Gallery</Link></li>
                     <li><Link to="/contact" className='link'>Contact</Link></li>
                     <li><Link to="/use-effect" className='link'>useEffect</Link></li>
