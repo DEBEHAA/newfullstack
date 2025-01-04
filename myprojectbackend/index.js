@@ -2,6 +2,8 @@ var express = require('express')
 var path = require('path')
 var mdb = require('mongoose')
 var app =  express()
+var cors = require('cors')
+app.use(cors())
 var User = require('./models/users')
 const PORT = 3003
 app.use(express.json())
@@ -53,7 +55,7 @@ app.post('/signup',async(req,res)=>{
     }
     
 })
-app.post('/login',async(req,res)=>{
+app.post('/signin',async(req,res)=>{
     var {email,password} = req.body
     try{
             var existingUser = await User.findOne({email:email})
