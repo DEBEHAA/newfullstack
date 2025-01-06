@@ -13,7 +13,7 @@ import UseEffect from './components/funcomp/UseEffect'
 import UseRef from './components/funcomp/UseRef'
 import UseContext from './components/funcomp/UseContext';
 import UseMemo from './components/funcomp/UseMemo';
-import Images from './components/funcomp/images';
+import Images from './components/funcomp/Images';
 import SignupForm from './components/funcomp/Signup';
 import LoginForm from './components/funcomp/Login';
 function App() {

@@ -20,6 +20,9 @@ var NavBar = () => {
               Gallery
             </Link>
           </li>
+          <Link to="/images" className="link">
+              Images
+            </Link>
           <li>
             <Link to="/use-effect" className="link">
               UseEffect
