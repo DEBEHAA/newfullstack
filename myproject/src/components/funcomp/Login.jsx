@@ -8,7 +8,7 @@ function LoginForm() {
   const navigate = useNavigate();
   const login = async(event)=>{
     event.preventDefault()
-    var req = await axios.post("http://localhost:3001/login",{
+    var req = await axios.post("https://newfullstack-zbrd.onrender.com/login",{
       email,password
     })
     console.log(req.data)

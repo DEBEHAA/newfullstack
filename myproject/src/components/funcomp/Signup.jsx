@@ -11,7 +11,7 @@ function SignupForm() {
 
   async function signup(event) {
     event.preventDefault();
-    var req = await axios.post("http://localhost:3001/signup", {
+    var req = await axios.post("https://newfullstack-zbrd.onrender.com/signup", {
       firstName: firstName,
       lastName: lastName,
       email: email,
