@@ -2,7 +2,7 @@
 import React from 'react'; 
 
 import NavBar from './components/funcomp/NavBar';
-import './App.css'; 
+
 import About from './components/funcomp/About'
 import Contact from './components/funcomp/Contact'
 import Gallery from './components/funcomp/Gallery'

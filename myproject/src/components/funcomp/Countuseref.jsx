@@ -1,4 +1,4 @@
-import '../../assets/css/NavBar.css'
+import './css/NavBar.css'
 import { useEffect,useRef,useState } from "react";
 var Useref =()=>{
     var [num,setNum] = useState(0);
